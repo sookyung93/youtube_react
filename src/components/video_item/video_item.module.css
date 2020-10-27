@@ -1,0 +1,56 @@
+:root {
+  /* Color */
+  --color-light-grey: #d6d4d4;
+  --color-grey: #616161;
+
+  /* Size */
+  --size-border-radius: 4px;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 0.2em;
+  width: 50%;
+}
+
+.video {
+  display: flex;
+  padding: 8px;
+  border: 1px solid var(--color-light-grey);
+  border-radius: var(--size-border-radius);
+  align-items: center;
+  cursor: pointer;
+  transition: transform 300ms ease-in;
+  box-shadow: 4px 4px 3px 1px rgba(232, 227, 232, 1);
+}
+
+.video:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail {
+  width: 40%;
+}
+
+.description {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description__title {
+  margin: 0 0 4px 0;
+  font-size: 0.8rem;
+  height: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description__channelTitle {
+  margin: 0;
+  font-size: 0.6rem;
+  color: var(--color-grey);
+}
