@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.app {
+  max-width: 80rem;
+}
+
+.container {
+  padding: 8px 32px;
+  display: flex;
+}
+
+.play {
+  flex: 1 1 70%;
+}
+
+.list {
+  flex: 1 1 30%;
+}

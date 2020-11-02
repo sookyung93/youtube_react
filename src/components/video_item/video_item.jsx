@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './video_item.module.css';
 
 const VideoItem = (props) => {
+  const layout = props.layout === 'list' ? styles.list : styles.grid;
   return (
-    <li className={styles.container}>
+    <li
+      className={`${styles.container} ${layout} `}
+      onClick={() => props.onVideoClick(props.video)}
+    >
       <div className={styles.video}>
         <img
           className={styles.thumbnail}

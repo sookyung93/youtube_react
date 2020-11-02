@@ -4,14 +4,18 @@ import styles from './header.module.css';
 function Header(props) {
   const inputRef = useRef();
 
-  const onClick = () => {
+  const handleSearch = () => {
     const inputValue = inputRef.current.value;
     props.onSearch(inputValue);
   };
 
+  const onClick = () => {
+    handleSearch();
+  };
+
   const onKeyPress = (event) => {
     if (event.key === 'Enter') {
-      onClick();
+      handleSearch();
     }
   };
 
