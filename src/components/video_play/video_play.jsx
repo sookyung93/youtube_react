@@ -5,6 +5,7 @@ const VideoPlay = (props) => {
   return (
     <div className={styles.container}>
       <iframe
+        title="video-paly"
         width="100%"
         height="500"
         src={`https://www.youtube.com/embed/${props.video.id}`}

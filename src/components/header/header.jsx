@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { memo, useRef } from 'react';
 import styles from './header.module.css';
 
-function Header(props) {
+const Header = memo((props) => {
   const inputRef = useRef();
 
   const handleSearch = () => {
@@ -18,7 +18,6 @@ function Header(props) {
       handleSearch();
     }
   };
-
   return (
     <div className={styles.header}>
       <div className={styles.logo}>
@@ -41,6 +40,6 @@ function Header(props) {
       </button>
     </div>
   );
-}
+});
 
 export default Header;
