@@ -53,3 +53,10 @@
 .list {
   flex: 1 1 30%;
 }
+
+@media screen and (max-width: 30rem) {
+  .container {
+    padding: 0.25rem;
+    flex-direction: column;
+  }
+}

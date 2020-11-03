@@ -63,3 +63,9 @@ li {
   font-size: 0.6rem;
   color: var(--color-grey);
 }
+
+@media screen and (max-width: 480px) {
+  .container.grid {
+    width: 100%;
+  }
+}
